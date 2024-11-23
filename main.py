@@ -20,7 +20,7 @@ class HelloWorld(FlowLauncher):
                 "IcoPath": "Images/app.png",
                 "JsonRPCAction": {
                     "method": "open_url",
-                    "parameters": ["https://github.com/Flow-Launcher/Flow.Launcher"]
+                    "parameters": [f"https://wiki.hypixel.net/index.php?search={query.strip()}"]
                 }
             }
         ]
@@ -32,8 +32,9 @@ class HelloWorld(FlowLauncher):
                 "SubTitle": "Press enter to open Flow the plugin's repo in GitHub",
                 "IcoPath": "Images/app.png",
                 "JsonRPCAction": {
+                "JsonRPCAction": {
                     "method": "open_url",
-                    "parameters": ["https://github.com/Flow-Launcher/Flow.Launcher.Plugin.HelloWorldPython"]
+                    "parameters": [f"https://wiki.hypixel.net/index.php?search={data.strip()}"]
                 }
             }
         ]
