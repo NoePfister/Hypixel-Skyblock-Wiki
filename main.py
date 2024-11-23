@@ -15,7 +15,7 @@ class HelloWorld(FlowLauncher):
     def query(self, query):
         return [
             {
-                "Title": "{}".format(('Search for: ' + query , query)[query == '']),
+                "Title": "Search for: {}".format((query , query)[query == '']),
                 "SubTitle": "Press Enter to Search.",
                 "IcoPath": "Images/app.png",
                 "JsonRPCAction": {
