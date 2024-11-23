@@ -15,8 +15,8 @@ class HelloWorld(FlowLauncher):
     def query(self, query):
         return [
             {
-                "Title": "Hello World, this is where title goes. {}".format(('Your query is: ' + query , query)[query == '']),
-                "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
+                "Title": "{}".format(('Search for: ' + query , query)[query == '']),
+                "SubTitle": "Press Enter to Search.",
                 "IcoPath": "Images/app.png",
                 "JsonRPCAction": {
                     "method": "open_url",
@@ -28,8 +28,8 @@ class HelloWorld(FlowLauncher):
     def context_menu(self, data):
         return [
             {
-                "Title": "Hello World Python's Context menu",
-                "SubTitle": "Press enter to open Flow the plugin's repo in GitHub",
+                "Title": "Context Menu",
+                "SubTitle": "Press Enter to Search.",
                 "IcoPath": "Images/app.png",
                 "JsonRPCAction": {
                 "JsonRPCAction": {
