@@ -35,7 +35,7 @@ class HelloWorld(FlowLauncher):
                 "JsonRPCAction": {
                     "method": "open_url",
                     "parameters": [f"https://wiki.hypixel.net/index.php?search={data.strip()}"]
-                }
+                }}
             }
         ]
 
